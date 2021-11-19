@@ -18,6 +18,11 @@ import {FormsModule} from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -28,20 +33,25 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     CurrentTrainingComponent,
     NewTrainingComponent,
     PastTrainingComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HeaderComponent,
+    SidenavListComponent
   ],
-  imports: [
-    BrowserModule,
-    FlexLayoutModule,
-    MaterialModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatInputModule,
-    FormsModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatCheckboxModule
-  ],
+    imports: [
+        BrowserModule,
+        FlexLayoutModule,
+        MaterialModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatInputModule,
+        FormsModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatCheckboxModule,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatListModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
